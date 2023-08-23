@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bai+Jamjuree:ital,wght@0,200;0,300;1,700&family=Bebas+Neue&family=Lilita+One&family=Roboto+Slab:wght@700&family=Rubik+Mono+One&family=Signika+Negative:wght@300;700&family=Yeseva+One&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <ul class="unorder">
+                <img class="logo" src="/images/Myntra-Logo-PNG-ovjndf3.png">
+                <li>MEN</li>
+                <li>WOMEN</li>
+                <li>KIDS</li>
+                <li class="hl">HOME & LIVING</li>
+                <li>BEAUTY</li>
+                <li class="hl1">STUDIO<span>New</span></li>
+                <img class="logo1" src="/images/search_FILL0_wght400_GRAD0_opsz48.png">
+                <input class="search" type="text" placeholder="Search for products, brands and more">
+
+                <div class="icons">
+                  <img class="logo2" src="/images/person_FILL0_wght400_GRAD0_opsz48.png">
+                  <p class="text1">Profile</p>
+                  
+                </div>
+                <div class="icons1">
+                    <img class="logo3" src="/images/favorite_FILL0_wght400_GRAD0_opsz48.png">
+                    <p class="text2">Wishlist</p>
+                    
+                  </div>
+                  <div class="icons2">
+                    <img class="logo4" src="/images/shopping_bag_FILL0_wght400_GRAD0_opsz48.png">
+                    <p class="text3">Bag</p>
+                 </div>
+                 
+            </ul>
+
+        </div>
+    </header>
+
+    <main class="main">
+      <img class="first" src="/images/page1.png" alt="pagenotfounf">
+      <img class="second" src="/images/Screenshot (9).png">
+      <div class="img">
+          <img class="third" id="myImage" src="/images/img1.jpg">
+
+      </div>
+      <div class="img">
+        <img class="four" src="/images/middel.webp">
+
+    </div>
+    <div class="img">
+      <img class="five" src="/images/Screenshot (164).png">
+
+  </div>
+  <div class="img">
+    <img class="six" src="/images/img11.webp">
+
+</div>
+<div class="img">
+  <img class="four" src="/images/Screenshot (161).png">
+
+</div>
+<div class="img">
+  <img class="four" src="/images/Screenshot (163).png">
+
+</div>
+<div class="img">
+  <img class="four" src="/images/Screenshot (166).png">
+
+</div>
+<div class="img">
+  <img class="four" src="/images/Screenshot (165).png">
+
+</div>
+<div class="img">
+  <img class="four" src="/images/page2.png">
+
+</div>
+<div class="img">
+  <img class="four" src="/images/page3.png">
+
+</div>
+
+<div class="img">
+  <img class="four" src="/images/Screenshot 2023-08-22 101749.png">
+
+</div>
+    </main>
+    <script>
+      var images=["/images/img2.webp","/images/img3.webp","/images/img4.webp","/images/img5.webp","/images/img6.webp","/images/img7.webp","/images/img8.webp","/images/img9.webp"];
+var currentImage=0;
+
+function changeImage(){
+    currentImage=(currentImage+1);
+    if(currentImage==images.length){
+      currentImage=0;
+    }
+    document.getElementById("myImage").src=images[currentImage];
+
+   
+}
+
+setInterval(changeImage,2000);
+    </script>
+</body>
+</html>
